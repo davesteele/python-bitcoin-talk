@@ -1,0 +1,19 @@
+<head>
+<title>PayMe Summary Page</title>
+</head>
+<body>
+<h1>PayMe Summary Page</h1>
+<table border="1">
+<tr><th>User</th><th>Total Paid</th><th>Balance</th><th>Confirmations</th></tr>
+{% for user in user_list %}
+<tr><td>{{ user.user }}</td>
+<td>{{ user.amountstr }}</td>
+<td>{{ user.balancestr }}</td>
+<td>{{ user.confirmations }}</td></tr>
+{% endfor %}
+</table>
+<br>
+<form action="summary" method="get">
+Harvest address: <input type="text" name="address"/><input type="submit" value="Harvest"/>
+</form>
+</body>

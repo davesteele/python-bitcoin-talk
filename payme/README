@@ -1,0 +1,24 @@
+
+This is a small sample Django web application demonstrating transactions using
+BitCoin.
+
+This demo requires the django package.
+
+bitcoind should be running and accessible on port 8333.
+
+The rpcuser and rpcpassword parameters in ~/.bitcoin/bitcoin.conf need to
+match the user and password in tribapp/bt.py.
+
+To run, execute "python manage.py runserver" from this directory, then point
+your browser to http://127.0.0.1:8000/
+
+URLs are defined in urls.py. They point to view methods in tribapp/views.py,
+which render html using templates in the templates directory. The file 
+tribapp/bt.py contains the BitCoin interface functions. 
+
+The demonstration consists of three web pages. The index page allows user
+login. The user page displays a user pay-to BitCoin address, and payment
+to-date. The summary page shows all users with total paid, current balance,
+and the number of confirmations for the most recent transaction. The 'harvest'
+function transfers all outstanding balances to a specified BitCoin address.
+
