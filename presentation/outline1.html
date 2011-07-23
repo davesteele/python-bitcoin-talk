@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 1</title>
+</head>
+<body text="#000000" bgcolor="#849CC7" link="#000080" vlink="#0000CC" alink="#000080">
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(0)"><b>Exchange Digital Money using Bitcoin and Python</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(1)"><b>Resources</b></a></p><ul><li style="direction:ltr;"><font color="#333333">Presentation</font></li>
+<ul><li style="direction:ltr;"><a href="http://davesteele.github.com/python-bitcoin-talk/"><font color="#333333">http://davesteele.github.com/python-bitcoin-talk/</font></a></li>
+</ul></ul><font color="#333333"></font>
+<font color="#333333"></font>
+<ul><li style="direction:ltr;"><font color="#333333">Software</font></li>
+<ul><li style="direction:ltr;"><font color="#333333">{apt-get|yum} install git python-simplejson python-irclib pygame Django</font></li>
+<li style="direction:ltr;"><font color="#333333">git clone git://github.com/davesteele/python-bitcoin-talk.git</font></li>
+</ul></ul></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(2)"><b> </b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(3)"><b> </b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(4)"><b> </b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(5)"><b> </b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(6)">Slide 7</a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(7)"><b>The Secret Sauce...</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(8)"><b>Terminology</b></a></p><ul><li style="direction:ltr;"><font color="#333333">The Bitcoin ledger consists of a communally maintained chain of <u>Blocks</u> containing <u>Transactions</u> which record balance transfers between <u>Addresses</u></font></li>
+</ul><u><font color="#333333"></u></font>
+<ul><li style="direction:ltr;"><font color="#333333">Addresses are derived from a hash of the public key for a public/private key pair stored in the private <u>Wallet</u></font></li>
+</ul><font color="#333333"></font>
+<ul><li style="direction:ltr;"><font color="#333333">Transactions are <u>Confirmed</u> as they become embedded in the <u>Longest Block Chain</u></font></li>
+</ul><u><font color="#333333"></u></font>
+<ul><li style="direction:ltr;"><font color="#333333">Addresses can be aggregated locally in the Wallet using text <u>Labels</u>, also called <u>Accounts</u></font></li>
+</ul></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(9)">Slide 10</a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(10)"><b>Getting Bitcoins</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(11)">Slide 12</a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(12)"><b>bitcoind</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(13)"><b>bitcoind JSON-RPC using Python</b></a></p><ul><li style="direction:ltr;"><font color="#333333">rpcuser and rpcpassword </font></li>
+</ul><font color="#333333">     defined in </font>
+<font color="#333333">     ~/.bitcoin/bitcoin.conf</font>
+<ul><li style="direction:ltr;"><font color="#333333">Install python-bitcoinrpc</font></li>
+</ul><font color="#333333">     <a href="https://github.com/jgarzik/python-bitcoinrpc">https://github.com/jgarzik/python-bitcoinrpc</font></a>
+<ul><li style="direction:ltr;"><font color="#333333">bitcoind running</font></li>
+<li style="direction:ltr;"><font color="#333333">Ports 8332 and 8333 accessible</font></li>
+<li style="direction:ltr;"><font color="#333333">API Calls defined </font></li>
+</ul><font color="#333333">     <a href="https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list">https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list</font></a>
+</div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(14)"><b>Example Django Website</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(15)"><b>“Bitcoin Watch” Monitor</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(16)"><b>Opportunity – URI Scheme Handler</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(17)"><b>Vending</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(18)"><b>Opportunity – Wallet Apps</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(19)"><b>Python Resources</b></a></p><ul><li style="direction:ltr;"><font color="#333333">dbdump.py – parse wallet file</font></li>
+<ul><li style="direction:ltr;"><a href="https://github.com/gavinandresen/bitcointools"><font color="#333333">https://github.com/gavinandresen/bitcointools</a> </font></li>
+</ul></ul><font color="#333333"></font>
+<ul><li style="direction:ltr;"><font color="#333333">pycoin – Bitcoin peer-to-peer implementation in Python 3</font></li>
+<ul><li style="direction:ltr;"><a href="http://gitorious.org/pycoin"><font color="#333333">http://gitorious.org/pycoin</font></a></li>
+</ul></ul></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(20)"><b>Aristotle's Qualities of a Good Money</b></a></p></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(21)"><b>Bitcoin Links</b></a></p><ul><li style="direction:ltr;"><font color="#333333">Market – Bitcoin Charts</font></li>
+<ul><li style="direction:ltr;"><a href="http://bitcoincharts.com/markets/mtgoxUSD_trades.html"><font color="#333333">http://bitcoincharts.com</font></a></li>
+</ul><li style="direction:ltr;"><font color="#333333">Plumbing – Block Explorer</font></li>
+<ul><li style="direction:ltr;"><a href="http://blockexplorer.com/"><font color="#333333">http://blockexplorer.com/</font></a></li>
+<li style="direction:ltr;"><font color="#333333">Stats - <a href="http://blockexplorer.com/q">http://blockexplorer.com/q</font></a></li>
+</ul><li style="direction:ltr;"><font color="#333333">Technical – Bitcoin Wiki</font></li>
+<ul><li style="direction:ltr;"><a href="https://en.bitcoin.it/wiki/Main_Page"><font color="#333333">https://en.bitcoin.it/wiki/Main_Page</font></a></li>
+<li style="direction:ltr;"><a href="https://en.bitcoin.it/wiki/Protocol_specification#Addresses"><font color="#333333">Addresses</a>, <a href="https://en.bitcoin.it/wiki/Protocol_specification#tx">Transactions</a>, <a href="https://en.bitcoin.it/wiki/Script#Standard_Transaction_to_Bitcoin_address">Signing</a>, <a href="https://en.bitcoin.it/wiki/Protocol_specification#block">Blocks</a>, <a href="https://en.bitcoin.it/wiki/Network">Peer Protocol</font></a></li>
+</ul><li style="direction:ltr;"><font color="#333333">Community - <a href="http://forum.bitcoin.org/">http://forum.bitcoin.org/</font></a></li>
+<li style="direction:ltr;"><font color="#333333">News</font></li>
+<ul><li style="direction:ltr;"><a href="http://www.bitcoinnews.com/"><font color="#333333">http://www.bitcoinnews.com/</font></a></li>
+<li style="direction:ltr;"><a href="http://www.shitcoins.com/"><font color="#333333">http://www.****coins.com/</font></a></li>
+</ul></ul></div>
+<div align="left"><p style="direction:ltr;"><a href="JavaScript:parent.NavigateAbs(22)">Slide 23</a></p></div>
+</body>
+</html>
