@@ -20,12 +20,11 @@ class BitcoinWatchBot(SingleServerIRCBot):
                        nickname="bcbot",
                        server="chat.freenode.net",
                        port=6667,
-                       realname="Bitcoin monitoring bot <webpage>"):
+                       realname="Bitcoin monitoring bot https://github.com/davesteele/python-bitcoin-talk"):
         SingleServerIRCBot.__init__(self, [(server, port)], nickname, realname)
         self.channel = channel
 
         self.txCallbacks = []
-        self.addrCallbacks = []
 
     def on_nicknameinuse(self, c, e):
         c.nick(c.get_nickname() + str( random.randint( 0, 32768 ) ) )
