@@ -58,6 +58,10 @@ class Bt( object ):
 
         user_list = self.get_user_list()
 
-        [ self.proxy.sendfrom( x['account'], address, x['balance'] ) 
-            for x in user_list if x['balance'] > 0 ]
+        for user in user_list:
+            balance = user['balance']
+            account = user['account']
 
+            if balance > 0:
+                print "Transferring %f from %s to %s" % ( balance, account, address )
+                self.proxy.sendfrom( account, address, balance )
